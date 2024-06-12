@@ -1,13 +1,96 @@
-body {
-    background: #6b6e5f;
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+:root {
+  --font1: "Yanone Kaffeesatz", sans-serif;
+  --font2: "Concert One", sans-serif;
+  
+  --color1: #484646;
+  --color2: #D9D9D9;
+  --color3: #FED6D6;
+  --color4: #720303;
+}
+
+* {
+  background-color: var(--color1);
+  background-image: url('data:image/svg+xml,%3Csvg width="52" height="26" viewBox="0 0 52 26" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
 }
 
 main {
-    width: 40em;
-    margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-main img {
-    width: 100%;
-    display: block;
+article {
+  margin: .5em;
+}
+
+h1{
+  max-width: 50%;
+  background: var(--color2);
+  font-family: var(--font2);
+  color: var(--color1);
+  text-align: center;
+  padding: .2em;
+  border-radius: 20px;
+}
+
+h2{
+  max-width: 50%;
+  background: var(--color2);
+  font-family: var(--font2);
+  color: var(--color1);
+  text-align: center;
+  padding: .25em;
+  border-radius: 20px;
+}
+
+h1 {
+  animation-name: backInDown;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+h2 {
+  animation-name: backInLeft;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+}
+
+p {
+  font-family: var(--font1);
+  color: var(--color1);
+  background: var(--color2);
+  border-radius: 20px;
+  padding: 1em;
+  line-height: 1.4;
+}
+
+nav {
+  margin-top: 25px;
+}
+
+a {
+  background-color: var(--color2);
+  background-image: none;
+}
+
+a:link {
+  color: var(--color4);
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+a:hover {
+  background-color: var(--color3);
+  transition: background 1.5s;
+  background-image: none;
 }
