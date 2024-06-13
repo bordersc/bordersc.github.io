@@ -22,9 +22,12 @@ main {
   grid-template-columns: 1fr 1fr;
 }
 
-article {
-  margin: .5em;
+img {
+  margin-left: 10em;
+  margin-top: 1.7em;
+  max-height: 63%;
 }
+
 
 h1{
   max-width: 50%;
@@ -64,6 +67,7 @@ h2 {
 
 p {
   font-family: var(--font1);
+  font-size: larger;
   color: var(--color1);
   background: var(--color2);
   border-radius: 20px;
@@ -82,11 +86,12 @@ a {
 
 a:link {
   color: var(--color4);
+  font-family: var(--font2);
   border-radius: 20px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 18px;
 }
 
 a:hover {
